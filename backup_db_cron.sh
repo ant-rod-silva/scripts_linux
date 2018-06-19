@@ -1,11 +1,14 @@
 #!/bin/bash
+
+# bash script to generate a postgresql database backup using cron
+# crontab -e:
+# At 09:05
+# 0 9 * * * echo 'sh /home/<user>/<script_location_dir>/backup_db_cron.sh' | /bin/bash
+
 COR=`tput setaf 3`
 NC=`tput sgr0` # No Color
 sh -c "clear"
 
-# crontab -e:
-# At 09:05
-# 0 9 * * * echo 'sh /home/<user>/<script_location_dir>/backup_db_cron.sh' | /bin/bash
 
 
 # Location to place backups.
